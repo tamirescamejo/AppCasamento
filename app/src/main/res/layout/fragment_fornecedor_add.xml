@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_rosa_claro"
+    tools:context=".ui.fornecedoradd.FornecedorAddFragment">
+
+    <EditText
+        android:id="@+id/etFornecedorNameAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:hint="@string/nome_fornecedor"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etFornecedorDescricaoAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/descricao_fornecedor"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/etFornecedorNameAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etFornecedorNameAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etFornecedorNameAdd" />
+
+    <Button
+        android:id="@+id/bvSaveFornecedor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color_rosa_escuro"
+        android:text="@string/salvar_fornecedor"
+        app:layout_constraintEnd_toEndOf="@+id/etFornecedorNameAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etFornecedorNameAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etFornecedorDescricaoAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

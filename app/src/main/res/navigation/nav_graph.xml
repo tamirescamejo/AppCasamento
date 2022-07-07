@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fornecedorListFragment">
+    <fragment
+        android:id="@+id/fornecedorListFragment"
+        android:name="br.com.zup.casamento.ui.forncedorlist.view.FornecedorListFragment"
+        android:label="fragment_fornecedor_list"
+        tools:layout="@layout/fragment_fornecedor_list" >
+        <action
+            android:id="@+id/action_fornecedorListFragment_to_fornecedorDetailFragment"
+            app:destination="@id/fornecedorDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fornecedorDetailFragment"
+        android:name="br.com.zup.casamento.ui.fornecedordetail.view.FornecedorDetailFragment"
+        android:label="fragment_fornecedor_detail"
+        tools:layout="@layout/fragment_fornecedor_detail" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="br.com.zup.casamento.splash.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="br.com.zup.casamento.ui.login.view.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="br.com.zup.casamento.ui.register.view.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+</navigation>

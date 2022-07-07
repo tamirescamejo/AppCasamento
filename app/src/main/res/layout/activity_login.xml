@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_rosa_claro"
+    tools:context=".ui.login.view.LoginActivity">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_32"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/etUsername"
+        app:layout_constraintStart_toStartOf="@+id/etUsername"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swSaveData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar_login_e_senha"
+        android:textAlignment="textEnd"
+        android:textColor="@color/color_rosa_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/action_register"
+        android:textAlignment="center"
+        android:textColor="@color/color_rosa_escuro"
+        android:layout_marginTop="@dimen/margin_32"
+        app:layout_constraintEnd_toEndOf="@+id/swSaveData"
+        app:layout_constraintStart_toStartOf="@+id/swSaveData"
+        app:layout_constraintTop_toBottomOf="@+id/swSaveData"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/bvLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="@string/action_sign_in"
+        android:backgroundTint="@color/color_rosa_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/tvRegistro"
+        app:layout_constraintStart_toStartOf="@+id/tvRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegistro" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

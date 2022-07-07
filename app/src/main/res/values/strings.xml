@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Casamento</string>
+    <string name="password">Senha</string>
+    <string name="username">E-mail</string>
+    <string name="salvar_login_e_senha">Salvar Login e Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_register">Crie uma nova conta e comece a usar o aplicativo!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fornecedores_title_menu">Fornecedores</string>
+    <string name="fornecedor_add_title_menu">Novo Fornecedor</string>
+    <string name="logo_do_fornecedor">Logo do fornecedor</string>
+    <string name="nome_fornecedor">Nome fornecedor</string>
+    <string name="descricao_fornecedor">Descricao fornecedor</string>
+    <string name="salvar_fornecedor">Salvar Fornecedor</string>
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="registrar_usuario">Registrar usuário</string>
+</resources>

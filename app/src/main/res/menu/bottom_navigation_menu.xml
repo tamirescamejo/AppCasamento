@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/menuFornecedorList"
+            android:enabled="true"
+            android:icon="@drawable/ic_fornecedor"
+            android:title="@string/fornecedores_title_menu"/>
+        <item
+            android:id="@+id/menuFornecedorAdd"
+            android:enabled="true"
+            android:icon="@drawable/ic_fornecedor_add"
+            android:title="@string/fornecedor_add_title_menu"/>
+</menu>
